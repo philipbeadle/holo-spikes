@@ -1,0 +1,22 @@
+[
+  {
+    "Path": "../holo-keys",
+    "Side": 1,
+    "BridgeZome": "genesis"
+  },
+  {
+    "Path": "../welcome",
+    "Side": 1,
+    "BridgeZome": "messages"
+  },
+  {
+    "Path": "../technical",
+    "Side": 1,
+    "BridgeZome": "messages"
+  },
+  {
+    "Path": "../ico",
+    "Side": 1,
+    "BridgeZome": "messages"
+  }
+]

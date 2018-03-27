@@ -1,0 +1,79 @@
+{
+    "Tests": [
+        {
+            "Convey": "We can store a private entry for the welcome channel we joined",
+            "Zome": "channels",
+            "FnName": "joinDNA",
+            "Input": {
+                "name": "welcome",
+                "dna": "QmaqMroPXpPU4EdMtkodugx7NMyVcFyKmkVQRqUUzAaELz"
+            },
+            "Output": "%h%",
+            "Err": null,
+            "ErrMsg": "",
+            "Regexp": "",
+            "Time": 0,
+            "Wait": 0,
+            "Exposure": "public",
+            "Raw": false,
+            "Repeat": 0,
+            "Benchmark": false
+        },
+        {
+            "Convey": "We can store another private entry for ico channel we joined",
+            "Zome": "channels",
+            "FnName": "joinDNA",
+            "Input": {
+                "name": "ico",
+                "dna": "QmaqMroPXpPU4EdMtkodugx7NMyVcFyKmkVQRqUUzAaICO"
+            },
+            "Output": "%h%",
+            "Err": null,
+            "ErrMsg": "",
+            "Regexp": "",
+            "Time": 0,
+            "Wait": 0,
+            "Exposure": "public",
+            "Raw": false,
+            "Repeat": 0,
+            "Benchmark": false
+        },
+        {
+            "Convey": "We can get the DNA for the welcome channel",
+            "Zome": "channels",
+            "FnName": "getDNA",
+            "Input": {"channel": "welcome"},
+            "Output": "QmaqMroPXpPU4EdMtkodugx7NMyVcFyKmkVQRqUUzAaELz",
+            "Err": null,
+            "ErrMsg": "",
+            "Regexp": "",
+            "Time": 0,
+            "Wait": 0,
+            "Exposure": "public",
+            "Raw": false,
+            "Repeat": 0,
+            "Benchmark": false
+        },
+        {
+            "Convey": "We can get the DNA for the ico channel",
+            "Zome": "channels",
+            "FnName": "getDNA",
+            "Input": {"channel": "ico"},
+            "Output": "QmaqMroPXpPU4EdMtkodugx7NMyVcFyKmkVQRqUUzAaICO",
+            "Err": null,
+            "ErrMsg": "",
+            "Regexp": "",
+            "Time": 0,
+            "Wait": 0,
+            "Exposure": "public",
+            "Raw": false,
+            "Repeat": 0,
+            "Benchmark": false
+        }
+    ],
+    "Identity": "",
+    "Fixtures": {
+        "Agents": null
+    },
+    "Benchmark": false
+}
