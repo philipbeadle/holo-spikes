@@ -1,22 +1,25 @@
 {
-    "Tests": [
-        {
-            "Convey": "add speaker test here",
-            "Zome": "social",
-            "FnName": "getMessagesBridged",
-            "Input": {"DNA":"QmbfGBrzub5GU4AFDKbuZV8pLCG8ngoVuH4XX3j1mVaDXT", "message": "Phil"},
-            "Output": "\"getMessagessocial-dna2Phil\"",
-            "Time": 0,
-            "Wait": 0,
-            "Exposure": "",
-            "Raw": false,
-            "Repeat": 0,
-            "Benchmark": false
-        }
-    ],
-    "Identity": "",
-    "Fixtures": {
-        "Agents": null
-    },
-    "Benchmark": false
+  "Tests": [
+    {
+      "Convey": "add speaker test here",
+      "Zome": "messages",
+      "FnName": "createMessageBridged",
+      "Input": {
+        "channle": "welcome",
+        "message": "Phil"
+      },
+      "Output": "\"getMessagessocial-dna2Phil\"",
+      "Time": 0,
+      "Wait": 0,
+      "Exposure": "",
+      "Raw": false,
+      "Repeat": 0,
+      "Benchmark": false
+    }
+  ],
+  "Identity": "",
+  "Fixtures": {
+    "Agents": null
+  },
+  "Benchmark": false
 }

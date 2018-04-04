@@ -1,19 +1,13 @@
 'use strict';
 
 function genesis() {
- return true
+  return true
 }
 
-function bridgeGenesis(side, dna, appData){
-  debug(getBridges()[0].ToApp)
-  debug('App.Agent.String ' + App.Agent.String.slice(0, App.Agent.String.indexOf('}') + 1))
+function bridgeGenesis(side, dna, appData) {
+  debug('HoloChat ' + App.Name + ' Bridged to: DNA: ' + dna + ' appData: ' + appData)
   var Agent = JSON.parse(App.Agent.String.replace(/'/g, '"').slice(0, App.Agent.String.indexOf('}') + 1))
-  var keyMgtAppDNA = Agent.KeyMgtAppDNA
-  debug(keyMgtAppDNA)
-  debug('getGenesisPublicKey' + bridge(keyMgtAppDNA, 'verify', 'getGenesisPublicKey', ''))
-  var genesisPublicKey = bridge(keyMgtAppDNA, 'verify', 'getGenesisPublicKey', '')
-  var signature = bridge(keyMgtAppDNA, 'verify', 'getSignature', '')
-  debug('signature ' + signature)
-  var messageVerified = verifySignature(signature, 'Revocation Method', genesisPublicKey)
-  return messageVerified;
+  var genesisPublicKey = bridge(Agent.KeyMgtAppDNA, 'verify', 'getGenesisPublicKey', '')
+  var signature = bridge(Agent.KeyMgtAppDNA, 'verify', 'getSignature', '')
+  return verifySignature(signature, 'Revocation Method', genesisPublicKey)
 }

@@ -4,21 +4,21 @@ function genesis() {
   return true;
 }
 
-function bridgeGenesis(side, dna, appData){
+function bridgeGenesis(side, dna, appData) {
   debug('HoloKeys ' + App.Name + ' Bridged to: DNA: ' + dna + ' appData: ' + appData)
   return true;
 }
 
-function getGenesisPublicKey(){
+function getGenesisPublicKey() {
   return get(App.Key.Hash)
 }
 
-function getSignature(){
+function getSignature() {
   debug('RevocationMethod ' + sign('Revocation Method'))
   return sign('Revocation Method')
 }
 
-function validateCommit (entryName, entry, header, pkg, sources) {
+function validateCommit(entryName, entry, header, pkg, sources) {
   switch (entryName) {
     case "sampleEntry":
       return true;
@@ -28,7 +28,7 @@ function validateCommit (entryName, entry, header, pkg, sources) {
   }
 }
 
-function validatePut (entryName, entry, header, pkg, sources) {
+function validatePut(entryName, entry, header, pkg, sources) {
   switch (entryName) {
     case "sampleEntry":
       return true;
@@ -38,7 +38,7 @@ function validatePut (entryName, entry, header, pkg, sources) {
   }
 }
 
-function validateMod (entryName, entry, header, replaces, pkg, sources) {
+function validateMod(entryName, entry, header, replaces, pkg, sources) {
   switch (entryName) {
     case "sampleEntry":
       return true;
@@ -48,7 +48,7 @@ function validateMod (entryName, entry, header, replaces, pkg, sources) {
   }
 }
 
-function validateDel (entryName, hash, pkg, sources) {
+function validateDel(entryName, hash, pkg, sources) {
   switch (entryName) {
     case "sampleEntry":
       return true;
@@ -58,22 +58,22 @@ function validateDel (entryName, hash, pkg, sources) {
   }
 }
 
-function validateLink(linkEntryType,baseHash,links,pkg,sources) {
+function validateLink(linkEntryType, baseHash, links, pkg, sources) {
   return false;
 }
 
-function validatePutPkg (entryName) {
+function validatePutPkg(entryName) {
   return null;
 }
 
-function validateModPkg (entryName) {
+function validateModPkg(entryName) {
   return null;
 }
 
-function validateDelPkg (entryName) {
+function validateDelPkg(entryName) {
   return null;
 }
 
-function validateLinkPkg (entryName) {
+function validateLinkPkg(entryName) {
   return null;
 }
