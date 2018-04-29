@@ -17,7 +17,7 @@
       "Benchmark": false
     }
   ],
-  "Identity": "",
+  "Identity": "{'KeyMgtAppDNA':'QmP7uR9khZnqwz35rtgiqGfw77yFA2xKvPLSVyeaLhcpCx','KeyRevocationAuth':'QmRztFDGmZ8H7b7MLuf4gCXEYAY6oympT22k4aFQJs7ktg'}",
   "Fixtures": {
     "Agents": null
   },
