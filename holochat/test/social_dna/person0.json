@@ -5,7 +5,7 @@
       "Zome": "messages",
       "FnName": "createMessageBridged",
       "Input": {
-        "channle": "welcome",
+        "channel": "welcome",
         "message": "Phil"
       },
       "Output": "\"getMessagessocial-dna2Phil\"",
