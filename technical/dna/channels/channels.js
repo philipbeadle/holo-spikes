@@ -18,13 +18,12 @@ function joinDNA(value){
 
 function getDNA(channel){
   debug('getDNA ' + channel.channel)
-  var dnaList = query({Constrain:{EntryTypes:["channel"]}})
-  //When Query Equals fixed refactor this
+  var dnaList = getBridges()
   var dnaEntry = dnaList.filter(function(dna){
-    return dna.name === channel.channel
+    return dna.CalleeName === channel.channel
   })
-  debug(dnaEntry[0].dna)
-  return dnaEntry[0].dna
+  debug(dnaEntry[0].CalleeApp)
+  return dnaEntry[0].CalleeApp
 }
 
 function validateCommit (entryName, entry, header, pkg, sources) {

@@ -27,7 +27,7 @@ function createMessageBridged(value){
   debug('channelDNA ' + channelDNA)
   debug('createMessageBridged' + App.Name + JSON.stringify(value) + value.channel)
   var createMessage = bridge(channelDNA, 'messages', 'createMessage', {'message': value.message})
-  return createMessage
+  return { 'hash' : createMessage, 'channel': value.channel }
 }
 
 function createMessage(value){

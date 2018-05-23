@@ -6,9 +6,9 @@
       "FnName": "createMessageBridged",
       "Input": {
         "channel": "welcome",
-        "message": "Phil"
+        "message": "Person"
       },
-      "Output": "",
+      "Output": {"channel":"welcome","hash":"\"QmTpaJudk1SMbyx3ZChASUGcixu3Cgx7UDtSPoxHie7Y6F\""},
       "Time": 0,
       "Wait": 0,
       "Exposure": "",
@@ -17,7 +17,7 @@
       "Benchmark": false
     }
   ],
-  "Identity": "{'KeyMgtAppDNA':'QmP7uR9khZnqwz35rtgiqGfw77yFA2xKvPLSVyeaLhcpCx','KeyRevocationAuth':'QmRztFDGmZ8H7b7MLuf4gCXEYAY6oympT22k4aFQJs7ktg'}",
+  "Identity": "{'KeyMgtAppDNA':'QmZPCdgMdCaT8gKsSd4QZJ9ZTNtCTD9jVgB6cpZB8RnFQj','KeyRevocationAuth':'QmRztFDGmZ8H7b7MLuf4gCXEYAY6oympT22k4aFQJs7ktg'}",
   "Fixtures": {
     "Agents": null
   },

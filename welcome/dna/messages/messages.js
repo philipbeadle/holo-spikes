@@ -23,11 +23,11 @@ function listMessages(){
 
 function createMessageBridged(value){
   debug(value)
-  var channelDNA = call('channels', 'getDNA', {"channel": value.channel}).replace(/"/g, '')
+  var channelDNA = call('channels', 'getDNA', {"channel": value.channel})
   debug('channelDNA ' + channelDNA)
   debug('createMessageBridged' + App.Name + JSON.stringify(value) + value.channel)
   var createMessage = bridge(channelDNA, 'messages', 'createMessage', {'message': value.message})
-  return createMessage
+  return { 'hash' : createMessage, 'channel': value.channel }
 }
 
 function createMessage(value){

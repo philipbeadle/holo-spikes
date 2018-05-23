@@ -5,11 +5,6 @@
     "BridgeZome": "messages"
   },
   {
-    "Path": "../technical",
-    "Side": 1,
-    "BridgeZome": "messages"
-  },
-  {
     "Path": "../ico",
     "Side": 1,
     "BridgeZome": "messages"

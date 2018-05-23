@@ -1,7 +1,7 @@
 {
   "Version": 1,
   "UUID": "eebdfcb8-3097-11e8-a19b-80e650006988",
-  "Name": "social-dna-welcome",
+  "Name": "holochat",
   "Properties": {
     "description": "provides an application template",
     "language": "en"

@@ -8,7 +8,7 @@
         "channel": "welcome",
         "message": "Phil"
       },
-      "Output": "\"getMessagessocial-dna2Phil\"",
+      "Output": {"channel":"welcome","hash":"\"QmdLYmsDZzWm4Z8fn7hPZZnsHmq92zZAqVo5Me8Fhb2WET\""},
       "Time": 0,
       "Wait": 0,
       "Exposure": "",
@@ -17,7 +17,7 @@
       "Benchmark": false
     }
   ],
-  "Identity": "{'KeyMgtAppDNA':'QmP7uR9khZnqwz35rtgiqGfw77yFA2xKvPLSVyeaLhcpCx','KeyRevocationAuth':'QmRztFDGmZ8H7b7MLuf4gCXEYAY6oympT22k4aFQJs7ktg'}",
+  "Identity": "{'KeyMgtAppDNA':'QmZPCdgMdCaT8gKsSd4QZJ9ZTNtCTD9jVgB6cpZB8RnFQj','KeyRevocationAuth':'QmRztFDGmZ8H7b7MLuf4gCXEYAY6oympT22k4aFQJs7ktg'}",
   "Fixtures": {
     "Agents": null
   },
